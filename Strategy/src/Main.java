@@ -23,7 +23,7 @@ public class Main {
     }
 
     public static long caluloTiempoDeEjecucion(Context context, ArrayList<Integer> lAditional, Ordenar metodo){
-        context.setEstategia(new InsertionSort());
+        context.setEstategia(metodo);
         long startTime = System.nanoTime();
         context.executeStrategy(lAditional);
         long endTime = System.nanoTime();
